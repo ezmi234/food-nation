@@ -25,7 +25,7 @@
                 <div class="w-72">
                     <!-- Heading -->
                     <h1 class="text-xl font-semibold">FoodNation</h1>
-                    <small class="text-gray-400">Share and Find recepits about Food.</small>
+                    <small class="text-gray-400">Share and Find recipes about Food.</small>
 
                     <!-- Form -->
                     <form class="mt-4">
@@ -52,7 +52,7 @@
                     <!-- Footer -->
                     <div class="text-center">
                     <span class="text-xs text-gray-400 font-semibold">Don't have account?</span>
-                    <a onclick(SignUp()) class="{{ request()->is('about') ? 'active' : ''}} text-xs font-semibold text-purple-700">Sign up</a>
+                    <a href="/signUp"  class=" text-xs font-semibold text-purple-700">Sign up</a>
                     </div>
               </div>
               </div>

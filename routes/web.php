@@ -17,5 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/signUp', function () {
+    return view('signUp.index');
+});
+
 
 Route::fallback(App\Http\Controllers\FallbackController::class);
