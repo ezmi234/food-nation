@@ -46,25 +46,20 @@
 
                     <div class="mb-3">
                         <button class="mb-1.5 block w-full text-center text-white bg-purple-700 hover:bg-purple-900 px-2 py-1.5 rounded-md">Sign in</button>
-                        <button class="flex flex-wrap justify-center w-full border border-gray-300 hover:border-gray-500 px-2 py-1.5 rounded-md">
-                        <img class="w-5 mr-2" src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA">
-                        Sign in with Google
-                        </button>
                     </div>
                     </form>
 
                     <!-- Footer -->
                     <div class="text-center">
                     <span class="text-xs text-gray-400 font-semibold">Don't have account?</span>
-                    <a href="#" class="text-xs font-semibold text-purple-700">Sign up</a>
+                    <a onclick(SignUp()) class="{{ request()->is('about') ? 'active' : ''}} text-xs font-semibold text-purple-700">Sign up</a>
                     </div>
-                </div>
-                </div>
-
-                <!-- Login banner -->
-                <div class="invisible md:visible md:static absolute flex flex-wrap content-center justify-center rounded-r-md" style="width: 24rem; height: 32rem;">
+              </div>
+              </div>
+              <!-- Login banner -->
+              <div class="invisible md:visible md:static absolute flex flex-wrap content-center justify-center rounded-r-md" style="width: 24rem; height: 32rem;">
                 <img class="w-full h-full bg-center bg-no-repeat bg-cover rounded-r-md" src="https://i.imgur.com/9l1A4OS.jpeg">
-                </div>
+              </div>
 
             </div>
             </div>
