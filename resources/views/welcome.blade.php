@@ -26,32 +26,43 @@
                     <!-- Heading -->
                     <h1 class="text-xl font-semibold">FoodNation</h1>
                     <small class="text-gray-500">Share and see recipes from all over the world.</small>
-
+                    @if(\Session::has('message'))
+                        <div class="alert alert-info">
+                            {{\Session::get('message')}}
+                        </div>
+                    @endif
                     <!-- Form -->
-                    <form class="mt-4">
-                    <div class="mb-3">
-                        <label class="mb-2 block text-xs font-semibold">Email</label>
-                        <input type="email" placeholder="Enter your email" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
-                    </div>
+                    <form method="POST" action="{{route('postlogin')}}" class="mt-4">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="email" class="mb-2 block text-xs font-semibold">Email</label>
+                            <input id="email" name="email" type="email" placeholder="Enter your email" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+                            @if ($errors->has('email'))
+                                <span class="text-red-500 text-xs">{{ $errors->first('email') }}</span>
+                            @endif
+                        </div>
 
-                    <div class="mb-3">
-                        <label class="mb-2 block text-xs font-semibold">Password</label>
-                        <input type="password" placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
-                    </div>
+                        <div class="mb-3">
+                            <label for="password" class="mb-2 block text-xs font-semibold">Password</label>
+                            <input id="password" name="password" type="password" placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+                            @if ($errors->has('password'))
+                                <span class="text-red-500 text-xs">{{ $errors->first('password') }}</span>
+                            @endif
+                        </div>
 
-                    <div class="mb-3 flex flex-wrap content-center">
-                        <a href="#" class="text-xs font-semibold text-purple-700">Forgot password?</a>
-                    </div>
+                        <div class="mb-3 flex flex-wrap content-center">
+                            <a href="#" class="text-xs font-semibold text-purple-700">Forgot password?</a>
+                        </div>
 
-                    <div class="mb-3">
-                        <button class="mb-1.5 block w-full text-center text-white bg-purple-700 hover:bg-purple-900 px-2 py-1.5 rounded-md">Sign in</button>
-                    </div>
+                        <div class="mb-3">
+                            <button type="submit" class="mb-1.5 block w-full text-center text-white bg-purple-700 hover:bg-purple-900 px-2 py-1.5 rounded-md">Sign in</button>
+                        </div>
                     </form>
 
                     <!-- Footer -->
                     <div class="text-center">
                     <span class="text-xs text-gray-400 font-semibold">Don't have account?</span>
-                    <a href="/signUp"  class=" text-xs font-semibold text-purple-700">Sign up</a>
+                    <a href="{{route('register-user')}}"  class=" text-xs font-semibold text-purple-700">Sign up</a>
                     </div>
               </div>
               </div>
