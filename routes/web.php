@@ -21,5 +21,12 @@ Route::get('/signUp', function () {
     return view('signUp.index');
 });
 
+Route::get('/home', function () {
+    return view('home.index');
+});
+
+Route::get('/profile', function () {
+    return view('profile.profile');
+});
 
 Route::fallback(App\Http\Controllers\FallbackController::class);
