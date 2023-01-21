@@ -91,9 +91,9 @@
         
       </header>
     </div>
-    <div class="px-px md:px-3 border-blac">
-        <ul class="flex  justify-around space-x-8 border-t
-                  text-center p-2 text-gray-600 leading-snug text-sm">
+    <div class="px-px md:px-3 ">
+        <ul class="flex  justify-around space-x-8 border-t-2 border-t-white
+                  text-center p-2 text-grey-600 leading-snug text-sm">
           <li>
             <span class="font-semibold text-gray-800 block">136</span>
             Piatti
@@ -108,10 +108,11 @@
             following
           </li>
         </ul>  
+
         <!-- sezione dei post-->
         <ul class="flex items-center justify-center space-x-12  
                       uppercase tracking-widest font-semibold text-xs text-gray-600
-                      border-t">
+                      border-white border-t-2 border-b-2 ">
           <li class="hover:border-t hover:border-gray-700">
             <a class="inline-block p-3" href="#">
               <i class="fas fa-th-large text-xl md:text-xs"></i>
@@ -128,6 +129,60 @@
     </div>
 
     
+
+    <div class="grid-flow-col auto-cols-max flex mx-px md:-mx-3 justify-evenly py-6">
+        <div class="box-border h-96 w-96 p-3 border-4 relative ">
+            <a href="">
+                </a><img class="w-full h-full absolute left-0 top-0 object-cover" src="https://blog.giallozafferano.it/dulcisinforno/wp-content/uploads/2021/03/Carbonara-ricetta-5328.jpg" alt="image">
+            </a>
+        </div>
+        <div class="box-border h-96 w-96 p-3 border-4 relative ">
+            <a href="">
+                </a><img class="w-full h-full absolute left-0 top-0 object-cover" src="https://blog.giallozafferano.it/dulcisinforno/wp-content/uploads/2021/03/Carbonara-ricetta-5328.jpg" alt="image">
+            </a>
+        </div>
+        <div class="box-border h-96 w-96 p-3 border-4 relative ">
+            <a href="">
+                </a><img class="w-full h-full absolute left-0 top-0 object-cover" src="https://blog.giallozafferano.it/dulcisinforno/wp-content/uploads/2021/03/Carbonara-ricetta-5328.jpg" alt="image">
+            </a>
+        </div>
+    </div>
+    <div class="grid-flow-col auto-cols-max flex mx-px md:-mx-3 justify-evenly py-6">
+        <div class="box-border h-96 w-96 p-3 border-4 relative ">
+            <a href="">
+                </a><img class="w-full h-full absolute left-0 top-0 object-cover" src="https://blog.giallozafferano.it/dulcisinforno/wp-content/uploads/2021/03/Carbonara-ricetta-5328.jpg" alt="image">
+            </a>
+        </div>
+        <div class="box-border h-96 w-96 p-3 border-4 relative ">
+            <a href="">
+                </a><img class="w-full h-full absolute left-0 top-0 object-cover" src="https://blog.giallozafferano.it/dulcisinforno/wp-content/uploads/2021/03/Carbonara-ricetta-5328.jpg" alt="image">
+            </a>
+        </div>
+        <div class="box-border h-96 w-96 p-3 border-4 relative ">
+            <a href="">
+                </a><img class="w-full h-full absolute left-0 top-0 object-cover" src="https://blog.giallozafferano.it/dulcisinforno/wp-content/uploads/2021/03/Carbonara-ricetta-5328.jpg" alt="image">
+            </a>
+        </div>
+    </div>
+    <div class="grid-flow-col auto-cols-max flex mx-px md:-mx-3 justify-evenly py-6">
+        <div class="box-border h-96 w-96 p-3 border-4 relative ">
+            <a href="">
+                </a><img class="w-full h-full absolute left-0 top-0 object-cover" src="https://blog.giallozafferano.it/dulcisinforno/wp-content/uploads/2021/03/Carbonara-ricetta-5328.jpg" alt="image">
+            </a>
+        </div>
+        <div class="box-border h-96 w-96 p-3 border-4 relative ">
+            <a href="">
+                </a><img class="w-full h-full absolute left-0 top-0 object-cover" src="https://blog.giallozafferano.it/dulcisinforno/wp-content/uploads/2021/03/Carbonara-ricetta-5328.jpg" alt="image">
+            </a>
+        </div>
+        <div class="box-border h-96 w-96 p-3 border-4 relative ">
+            <a href="">
+                </a><img class="w-full h-full absolute left-0 top-0 object-cover" src="https://blog.giallozafferano.it/dulcisinforno/wp-content/uploads/2021/03/Carbonara-ricetta-5328.jpg" alt="image">
+            </a>
+        </div>
+    </div>
+
+
   </main>
 </body>
 </html>
