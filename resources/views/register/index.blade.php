@@ -29,35 +29,30 @@
                     <small class="text-gray-500">Sign Up to see recipes from all over the world</small>
 
                     <!-- Form -->
-                    <form method="POST" action="" class="mt-4">
-
+                    <form method="POST" action="{{ route('postsignup') }}" class="mt-4">
+                    @csrf
                     <div class="mb-3">
                         <label for="FullName" class="mb-2 block text-xs font-semibold">Full Name</label>
-                        <input id="fullname" name="fullname" type="text" placeholder="Full Name" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+                        <input id="fullname" name="fullname" type="text" required autofocus placeholder="Full Name" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
                     </div>
 
                     <div class="mb-3">
                         <label class="mb-2 block text-xs font-semibold">Email</label>
-                        <input id="email" type="email" placeholder="Enter your email" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+                        <input id="email" name="email" type="email" required placeholder="Enter your email" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
                     </div>
 
                     <div class="mb-3">
-                        <label class="mb-2 block text-xs font-semibold">Username</label>
-                        <input id="username" type="varchar" placeholder="Username" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+                        <label for="password" class="mb-2 block text-xs font-semibold">Password</label>
+                        <input id="password" name="password" type="password" required autocomplete="password" placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
                     </div>
 
                     <div class="mb-3">
-                        <label class="mb-2 block text-xs font-semibold">Password</label>
-                        <input id="password" type="password" placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+                        <label for="password_confirmation" class="mb-2 block text-xs font-semibold">Confirm Password</label>
+                        <input id="password_confirmation" name="password_confirmation" type="password" required placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
                     </div>
 
                     <div class="mb-3">
-                        <label class="mb-2 block text-xs font-semibold">Confirm Password</label>
-                        <input id="password" type="password" placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
-                    </div>
-
-                    <div class="mb-3">
-                        <button class="mb-1.5 block w-full text-center text-white bg-purple-700 hover:bg-purple-900 px-2 py-1.5 rounded-md">Sign Up</button>
+                        <button type="submit" class="mb-1.5 block w-full text-center text-white bg-purple-700 hover:bg-purple-900 px-2 py-1.5 rounded-md">Sign Up</button>
                     </div>
                     </form>
               </div>

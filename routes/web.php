@@ -23,7 +23,7 @@ Route::get('/', function () {
 Route::get('/login', [CustomAuthController::class, 'login'])->name('login');
 Route::post('/postlogin', [CustomAuthController::class, 'login'])->name('postlogin');
 Route::get('signup', [CustomAuthController::class, 'signup'])->name('register-user');
-
+Route::post('postsignup', [CustomAuthController::class, 'store'])->name('postsignup');
 
 Route::get('/home', function () {
     return view('home.index');

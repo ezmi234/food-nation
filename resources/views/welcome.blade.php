@@ -27,9 +27,9 @@
                     <h1 class="text-xl font-semibold">FoodNation</h1>
                     <small class="text-gray-500">Share and see recipes from all over the world.</small>
                     @if(\Session::has('message'))
-                        <div class="alert alert-info">
+                        <span class="text-red-500 text-xs">
                             {{\Session::get('message')}}
-                        </div>
+                        </span>
                     @endif
                     <!-- Form -->
                     <form method="POST" action="{{route('postlogin')}}" class="mt-4">
