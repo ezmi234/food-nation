@@ -18,10 +18,12 @@
             <!-- Container -->
             <div class="flex flex-wrap min-h-screen w-full content-center justify-center bg-gray-200 py-10">
                     <div class="flex justify-between">
-                        <div><button>ciao</button></div>
-                        <div><button>ciao</button></div>
-                        <div><button>ciao</button></div>
-                        <div><button>ciao</button></div>
+                        <!-- Logo -->
+                        <div class="flex">
+                            <img src="{{ URL('images/page4.svg') }}" alt="logo" class="w-20 h-20">
+                            <h1 class="text-xl font-semibold">FoodNation</h1>
+
+                        </div>
                     </div>
             </div>
                         
