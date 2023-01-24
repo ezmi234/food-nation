@@ -34,7 +34,7 @@ class CustomAuthController extends Controller
                 ->with('message', 'Signed in!');
         }
 
-        return redirect("/login")->with('message', 'Login details are not valid!');
+        return redirect("/")->with('message', 'Login details are not valid!');
     }
 
     public function signUp(){

@@ -14,48 +14,55 @@
 </head>
 <body class="font-[Poppins] bg-gray-200 h-screen">
     <div id="app">
-        <app>
             <!-- component -->
             <!-- Container -->
-            <div class="flex flex-wrap min-h-screen w-full content-center justify-center bg-gray-200 py-10">
-            
+        <div class="flex flex-wrap min-h-screen w-full content-center justify-center bg-gray-200 py-10">
+            <!-- Logo -->
+            <div class="md:invisible absolute">
+                <img src="{{ URL('images/page4.svg') }}" alt="logo" class="w-40 h-40">
+            </div>
             <!-- Login component -->
             <div class="flex shadow-md">
                 <!-- Login form -->
                 <div class="flex flex-wrap content-center justify-center rounded-l-md bg-white" style="width: 24rem; height: 32rem;">
                 <div class="w-72">
                     <!-- Heading -->
-                    <h1 class="text-xl font-semibold">FoodNation</h1>
-                    <h2 class="text-xl font-semibold">Register</h2>
-                    <small class="text-gray-500">Sign Up to see recipes from all over the world</small>
+                    <h1 class="text-xl font-semibold text-orange-500">FoodNation</h1>
+                    <h2 class="text-xl font-semibold text-orange-300">Register</h2>
+                    <small class="text-green-400">Sign Up to see recipes from all over the world</small>
 
                     <!-- Form -->
                     <form method="POST" action="{{ route('postsignup') }}" class="mt-4">
                     @csrf
                     <div class="mb-3">
-                        <label for="FullName" class="mb-2 block text-xs font-semibold">Full Name</label>
-                        <input id="fullname" name="fullname" type="text" required autofocus placeholder="Full Name" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+                        <label class="mb-2 block text-xs font-semibold">Full Name</label>
+                        <input id="fullname" name="fullname" type="text" required autofocus placeholder="Full Name" class="block w-full rounded-md border border-gray-300 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 py-1 px-1.5 text-gray-500" />
                     </div>
 
                     <div class="mb-3">
                         <label class="mb-2 block text-xs font-semibold">Email</label>
-                        <input id="email" name="email" type="email" required placeholder="Enter your email" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+                        <input id="email" name="email" type="email" required placeholder="Enter your email" class="block w-full rounded-md border border-gray-300 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 py-1 px-1.5 text-gray-500" />
                     </div>
 
                     <div class="mb-3">
                         <label for="password" class="mb-2 block text-xs font-semibold">Password</label>
-                        <input id="password" name="password" type="password" required autocomplete="password" placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+                        <input id="password" name="password" type="password" required placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 py-1 px-1.5 text-gray-500" />
                     </div>
 
                     <div class="mb-3">
                         <label for="password_confirmation" class="mb-2 block text-xs font-semibold">Confirm Password</label>
-                        <input id="password_confirmation" name="password_confirmation" type="password" required placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-purple-700 focus:outline-none focus:ring-1 focus:ring-purple-700 py-1 px-1.5 text-gray-500" />
+                        <input id="password_confirmation" name="password_confirmation" type="password" required placeholder="*****" class="block w-full rounded-md border border-gray-300 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 py-1 px-1.5 text-gray-500" />
                     </div>
 
                     <div class="mb-3">
-                        <button type="submit" class="mb-1.5 block w-full text-center text-white bg-purple-700 hover:bg-purple-900 px-2 py-1.5 rounded-md">Sign Up</button>
+                        <button type="submit" class="mb-1.5 block w-full text-center text-white bg-orange-500 hover:bg-orange-700px-2 py-1.5 rounded-md">Sign Up</button>
                     </div>
                     </form>
+                    <!-- Footer -->
+                    <div class="text-center">
+                        <span class="text-xs text-gray-400 font-semibold">Do you already have an accout?</span>
+                        <a href="/"  class=" text-xs font-semibold text-orange-500">Login</a>
+                    </div>
               </div>
               </div>
               <!-- Login banner -->
@@ -64,9 +71,8 @@
               </div>
 
             </div>
-            </div>
-                        
-        </app> 
+        </div>
+                
     </div>
 
 

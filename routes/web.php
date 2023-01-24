@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home2', function () {
+    return view('home.index2');
+});
+
 
 Route::get('/login', [CustomAuthController::class, 'login'])->name('login');
 Route::post('/postlogin', [CustomAuthController::class, 'login'])->name('postlogin');
