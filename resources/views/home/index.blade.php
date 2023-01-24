@@ -13,24 +13,24 @@
     <div id="app">
         <div class="flex flex-col h-screen">   
             <!--header-->
-            <div class="flex flex-row justify-between bg-blue-500"> 
+            <div class="flex flex-row justify-between bg-green-300"> 
                 <div class="invisible md:visible md:static absolute">
                     <img src="{{ URL('images/page4.svg') }}" alt="logo" class="w-20 h-20">
                 </div>
                 <div>
-                    <button class="w-20 h-20 bg-blue-500 text-white">Home</button>
+                    <button class="w-20 h-20 bg-green-300 text-orange-500"><a href="">Home</a></button>
                 </div>
                 <div>
-                    <button class="w-20 h-20 bg-blue-500 text-white">Search</button>
+                    <button class="w-20 h-20 bg-green-300 text-white"><a href="/search">Search</a></button>
                 </div>
                 <div>
-                    <button class="w-20 h-20 bg-blue-500 text-white">FofD</button>
+                    <button class="w-20 h-20 bg-green-300 text-white"><a href="/foodOfTheDay">FofD</a></button>
                 </div>
                 <div>
-                    <button class="w-20 h-20 bg-blue-500 text-white">Notifiche</button>
+                    <button class="w-20 h-20 bg-green-300 text-white"><a href="/">Notifiche</a></button>
                 </div>
                 <div>
-                    <button class="w-20 h-20 bg-blue-500 text-white">Profile</button>
+                    <button class="w-20 h-20 bg-green-300 text-white"><a href="/profile">Profile</button>
                 </div>
             </div>
             <div id="post" class="flex flex-col items-center">
