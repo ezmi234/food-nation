@@ -7,6 +7,6 @@
 </head>
 <body>
   <h1 class="text-3xl font-bold underline">
-    Hello  </h1>
+    Hello world  </h1>
 </body>
 </html>
