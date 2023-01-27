@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\FallbackController;
-
+use App\Http\Controllers\ProfileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,8 +16,10 @@ use App\Http\Controllers\FallbackController;
 */
 
 Route::get('/', function () {
-    return view('profile.profile');
+    return view('');
 });
+
+
 
 Route::get('/home2', function () {
     return view('home.index2');
@@ -29,12 +31,15 @@ Route::post('/postlogin', [CustomAuthController::class, 'login'])->name('postlog
 Route::get('signup', [CustomAuthController::class, 'signup'])->name('register-user');
 Route::post('postsignup', [CustomAuthController::class, 'store'])->name('postsignup');
 
+route::get('/pdg',[ProfileController::class,'pdg'])->name('profilePdg');
+route::get('/profile',[ProfileController::class,'profile'])->name('profileHome');
+
 Route::get('/home', function () {
     return view('home.index');
 });
 
-Route::get('/profile', function () {
-    return view('profile.profile');
-});
+
+
+
 
 Route::fallback(FallbackController::class);

@@ -18,17 +18,17 @@
         </div>
       
         <div>
-            <a href="/search">
+            <a href="#">
                 <img class="h-7" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbhPYcc4w2Rp0h5cYhv2a-CbFL6ga7qtSo4Xi9EQKrDtWV9jgIo2FNVMjrFUMut_j-7ew&usqp=CAU" alt="Search">
             </a>
         </div>
         <div>
-        <a href="">
+        <a href="#">
             <img  class="h-7" src="https://img.favpng.com/22/17/5/fork-emoji-eating-food-plate-png-favpng-3F1P1ZyDKVehAndBSFFZgevJ1.jpg" alt="Food of the day">
             </a>
          </div>
          <div>
-            <a href="{{route('profileHome')}}">
+            <a href="">
                 <img class="h-7"src="https://cdn-icons-png.flaticon.com/512/45/45618.png" alt="Profile">
             </a>
          </div>
@@ -120,7 +120,7 @@
             </a>
           </li>
           <li class="hover:border-t hover:border-gray-700">
-            <a class="inline-block p-3" href="{{route('profilePdg')}}">
+            <a class="inline-block p-3" href="{{route('profileHome')}}">
               <i class="far fa-square text-xl md:text-xs"></i>
               <span>P.D.G</span>
             </a>
@@ -185,12 +185,7 @@
       </div>
     </div>
   </div>
-      
-      
-
-  </div>
-    
+    <div>ciao</div>
   </main>
-  
 </body>
 </html>
