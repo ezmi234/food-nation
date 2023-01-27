@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\FallbackController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('profile.profile');
 });
+
+Route::get('/home2', function () {
+    return view('home.index2');
+});
+
+
+Route::get('/login', [CustomAuthController::class, 'login'])->name('login');
+Route::post('/postlogin', [CustomAuthController::class, 'login'])->name('postlogin');
+Route::get('signup', [CustomAuthController::class, 'signup'])->name('register-user');
+Route::post('postsignup', [CustomAuthController::class, 'store'])->name('postsignup');
+
+Route::get('/home', function () {
+    return view('home.index');
+});
+
+Route::get('/profile', function () {
+    return view('profile.profile');
+});
+
+Route::fallback(FallbackController::class);
