@@ -19,7 +19,7 @@
         <div class="flex flex-wrap min-h-screen w-full content-center justify-center bg-gray-200 py-10">
             <!-- Logo -->
             <div class="md:invisible absolute">
-                <img src="{{ URL('images/page4.svg') }}" alt="logo" class="w-40 h-40">
+                <img src="{{ URL('images/logo.svg') }}" alt="logo" class="w-40 h-40">
             </div>
             <!-- Login component -->
             <div class="flex shadow-md">
@@ -34,6 +34,11 @@
                     <!-- Form -->
                     <form method="POST" action="{{ route('postsignup') }}" class="mt-4">
                     @csrf
+                    @if(\Session::has('message'))
+                    <span class="text-red-500 text-xs">
+                        {{\Session::get('message')}}
+                    </span>
+                    @endif
                     <div class="mb-3">
                         <label class="mb-2 block text-xs font-semibold">Full Name</label>
                         <input id="fullname" name="fullname" type="text" required autofocus placeholder="Full Name" class="block w-full rounded-md border border-gray-300 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 py-1 px-1.5 text-gray-500" />

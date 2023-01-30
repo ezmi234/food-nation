@@ -4,6 +4,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\FallbackController;
 use App\Http\Controllers\ProfileController;
+
+use App\Http\Controllers\UsersController;
+use App\Http\Controllers\PostsController;
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +22,7 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::get('/', function () {
-    return view('');
+    return view('welcome');
 });
 
 
@@ -25,18 +31,23 @@ Route::get('/home2', function () {
     return view('home.index2');
 });
 
-
 Route::get('/login', [CustomAuthController::class, 'login'])->name('login');
 Route::post('/postlogin', [CustomAuthController::class, 'login'])->name('postlogin');
 Route::get('signup', [CustomAuthController::class, 'signup'])->name('register-user');
 Route::post('postsignup', [CustomAuthController::class, 'store'])->name('postsignup');
 
+
 route::get('/pdg',[ProfileController::class,'pdg'])->name('profilePdg');
 route::get('/profile',[ProfileController::class,'profile'])->name('profileHome');
 
-Route::get('/home', function () {
+
+Route::get('user',  [UsersController::class, 'index'])->name('user');
+Route::get('/home', [PostsController::class, 'index'])->name('home');
+
+/*Route::get('/home', function () {
+
     return view('home.index');
-});
+});*/
 
 
 

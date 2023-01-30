@@ -18,8 +18,8 @@
             <!-- Container -->
         <div class="flex flex-wrap min-h-screen w-full content-center justify-center bg-gray-200 py-10">
             <!-- Logo -->
-            <div class="md:invisible static absolute">
-                <img src="{{ URL('images/page4.svg') }}" alt="logo" class="w-40 h-40">
+            <div class="absolute md:invisible">
+                <img src="{{ URL('images/logo.svg') }}" alt="logo" class="w-40 h-40">
             </div>
             <!-- Login component -->
             <div class="flex shadow-md">
